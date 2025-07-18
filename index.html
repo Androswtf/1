@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркетинговый калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Калькулятор услуг маркетинга</h1>
+      <p class="tagline">Узнайте стоимость и превратите трафик в продажи</p>
+    </header>
+    <form id="calc-form">
+      <div class="services">
+        <label><input type="checkbox" value="5000" name="seo"> SEO оптимизация (5000)</label>
+        <label><input type="checkbox" value="4000" name="smm"> SMM продвижение (4000)</label>
+        <label><input type="checkbox" value="6000" name="ppc"> PPC реклама (6000)</label>
+        <label><input type="checkbox" value="3000" name="content"> Контент-маркетинг (3000)</label>
+        <label><input type="checkbox" value="2000" name="email"> Email маркетинг (2000)</label>
+      </div>
+      <div class="months">
+        <label>Количество месяцев: <input type="number" id="months" value="1" min="1"></label>
+      </div>
+      <div class="tariffs">
+        <h2>Выберите тариф</h2>
+        <label class="tariff-card">
+          <input type="checkbox" value="10000" name="starter">
+          <span class="tariff-name">Старт</span>
+          <span class="tariff-desc">SEO и аналитика</span>
+          <span class="tariff-price">10 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="15000" name="basic">
+          <span class="tariff-name">Базовый</span>
+          <span class="tariff-desc">SEO + SMM</span>
+          <span class="tariff-price">15 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="20000" name="advanced">
+          <span class="tariff-name">Продвинутый</span>
+          <span class="tariff-desc">SEO + SMM + PPC</span>
+          <span class="tariff-price">20 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="25000" name="premium">
+          <span class="tariff-name">Премиум</span>
+          <span class="tariff-desc">SEO + SMM + PPC + Контент</span>
+          <span class="tariff-price">25 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="30000" name="corporate">
+          <span class="tariff-name">Корпоративный</span>
+          <span class="tariff-desc">Все услуги + Email</span>
+          <span class="tariff-price">30 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="50000" name="vip">
+          <span class="tariff-name">VIP</span>
+          <span class="tariff-desc">Персональная стратегия</span>
+          <span class="tariff-price">50 000 ₽</span>
+        </label>
+      </div>
+      <button type="button" id="calculate">Рассчитать</button>
+    </form>
+    <div class="result" id="result"></div>
+    <p class="cta">Заполните форму и получите бесплатную консультацию по увеличению продаж</p>
+    <button type="button" id="contact-btn" class="contact-button">Связаться с нами</button>
+  </div>
+
+  <div class="modal" id="contact-modal">
+    <div class="modal-content">
+      <h2>Оставьте свои данные</h2>
+      <label>Имя: <input type="text" id="client-name"></label>
+      <label>Телефон: <input type="tel" id="client-phone"></label>
+      <button type="button" id="send-contact" disabled>Отправить</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
