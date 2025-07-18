@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркетинговый калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Калькулятор услуг маркетинга</h1>
+    <form id="calc-form">
+      <div class="services">
+        <label><input type="checkbox" value="5000" name="seo"> SEO оптимизация (5000)</label>
+        <label><input type="checkbox" value="4000" name="smm"> SMM продвижение (4000)</label>
+        <label><input type="checkbox" value="6000" name="ppc"> PPC реклама (6000)</label>
+        <label><input type="checkbox" value="3000" name="content"> Контент-маркетинг (3000)</label>
+        <label><input type="checkbox" value="2000" name="email"> Email маркетинг (2000)</label>
+      </div>
+      <div class="months">
+        <label>Количество месяцев: <input type="number" id="months" value="1" min="1"></label>
+      </div>
+      <button type="button" id="calculate">Рассчитать</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
