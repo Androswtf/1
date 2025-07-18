@@ -66,7 +66,17 @@
     </form>
     <div class="result" id="result"></div>
     <p class="cta">Заполните форму и получите бесплатную консультацию по увеличению продаж</p>
+    <button type="button" id="contact-btn" class="contact-button">Связаться с нами</button>
   </div>
-<script src="script.js"></script>
+
+  <div class="modal" id="contact-modal">
+    <div class="modal-content">
+      <h2>Оставьте свои данные</h2>
+      <label>Имя: <input type="text" id="client-name"></label>
+      <label>Телефон: <input type="tel" id="client-phone"></label>
+      <button type="button" id="send-contact" disabled>Отправить</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

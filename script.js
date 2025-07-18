@@ -19,3 +19,32 @@ function calculatePrice() {
 }
 
 document.getElementById('calculate').addEventListener('click', calculatePrice);
+
+const contactBtn = document.getElementById('contact-btn');
+const modal = document.getElementById('contact-modal');
+const sendBtn = document.getElementById('send-contact');
+const nameInput = document.getElementById('client-name');
+const phoneInput = document.getElementById('client-phone');
+
+function checkInputs() {
+  if (nameInput.value.trim() && phoneInput.value.trim()) {
+    sendBtn.disabled = false;
+  } else {
+    sendBtn.disabled = true;
+  }
+}
+
+contactBtn.addEventListener('click', () => {
+  modal.classList.add('active');
+});
+
+nameInput.addEventListener('input', checkInputs);
+phoneInput.addEventListener('input', checkInputs);
+
+sendBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  nameInput.value = '';
+  phoneInput.value = '';
+  sendBtn.disabled = true;
+  alert('Скоро мы с вами свяжемся, благодарим!');
+});
