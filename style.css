@@ -33,11 +33,37 @@ h1 {
 }
 
 .services label,
-.months label,
-.tariffs label {
+.months label {
   display: block;
   margin: 10px 0;
   font-size: 1.1em;
+}
+
+.tariff-card {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 1.1em;
+}
+
+.tariff-card input {
+  margin-right: 10px;
+}
+
+.tariff-card .tariff-desc {
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.tariff-card .tariff-price {
+  float: right;
+  font-weight: 600;
 }
 
 .tariffs h2 {

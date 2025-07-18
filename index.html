@@ -25,12 +25,42 @@
       </div>
       <div class="tariffs">
         <h2>Выберите тариф</h2>
-        <label><input type="checkbox" value="10000" name="starter"> Старт (10000)</label>
-        <label><input type="checkbox" value="15000" name="basic"> Базовый (15000)</label>
-        <label><input type="checkbox" value="20000" name="advanced"> Продвинутый (20000)</label>
-        <label><input type="checkbox" value="25000" name="premium"> Премиум (25000)</label>
-        <label><input type="checkbox" value="30000" name="corporate"> Корпоративный (30000)</label>
-        <label><input type="checkbox" value="50000" name="vip"> VIP (50000)</label>
+        <label class="tariff-card">
+          <input type="checkbox" value="10000" name="starter">
+          <span class="tariff-name">Старт</span>
+          <span class="tariff-desc">SEO и аналитика</span>
+          <span class="tariff-price">10 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="15000" name="basic">
+          <span class="tariff-name">Базовый</span>
+          <span class="tariff-desc">SEO + SMM</span>
+          <span class="tariff-price">15 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="20000" name="advanced">
+          <span class="tariff-name">Продвинутый</span>
+          <span class="tariff-desc">SEO + SMM + PPC</span>
+          <span class="tariff-price">20 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="25000" name="premium">
+          <span class="tariff-name">Премиум</span>
+          <span class="tariff-desc">SEO + SMM + PPC + Контент</span>
+          <span class="tariff-price">25 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="30000" name="corporate">
+          <span class="tariff-name">Корпоративный</span>
+          <span class="tariff-desc">Все услуги + Email</span>
+          <span class="tariff-price">30 000 ₽</span>
+        </label>
+        <label class="tariff-card">
+          <input type="checkbox" value="50000" name="vip">
+          <span class="tariff-name">VIP</span>
+          <span class="tariff-desc">Персональная стратегия</span>
+          <span class="tariff-price">50 000 ₽</span>
+        </label>
       </div>
       <button type="button" id="calculate">Рассчитать</button>
     </form>
