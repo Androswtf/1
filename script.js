@@ -9,7 +9,7 @@ function calculatePrice() {
   });
   total *= months;
   const resultDiv = document.getElementById('result');
-  resultDiv.textContent = `Итого: ${total} ₽`;
+  resultDiv.textContent = `Ваш маркетинговый бюджет: ${total} ₽`;
 }
 
 document.getElementById('calculate').addEventListener('click', calculatePrice);
