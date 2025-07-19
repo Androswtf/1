@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Увеличьте продажи с умным маркетингом</h1>
+            <p class="subtitle">Настройка автоворонок, таргета и аналитики под ключ</p>
+            <a href="#feedback" class="btn">Получить бесплатный разбор</a>
+        </div>
+    </header>
+
+    <section class="problems">
+        <div class="container">
+            <h2>С какими проблемами приходят клиенты</h2>
+            <ul class="problem-list">
+                <li><img src="https://via.placeholder.com/60" alt=""/>Нет заявок из рекламы</li>
+                <li><img src="https://via.placeholder.com/60" alt=""/>Слив бюджета без роста продаж</li>
+                <li><img src="https://via.placeholder.com/60" alt=""/>Сложно отследить эффективность</li>
+                <li><img src="https://via.placeholder.com/60" alt=""/>Отсутствие стратегии продвижения</li>
+                <li><img src="https://via.placeholder.com/60" alt=""/>Некачественные лиды</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <ul class="advantages">
+                <li>Эксперты с опытом более 5 лет</li>
+                <li>Прозрачная отчетность</li>
+                <li>Гибкие условия сотрудничества</li>
+                <li>Собственная аналитика</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="steps">
+        <div class="container">
+            <h2>Как мы работаем</h2>
+            <ol class="step-list">
+                <li>Анализ ниши и аудит текущей рекламы</li>
+                <li>Настройка стратегии и запуск кампаний</li>
+                <li>Оптимизация и масштабирование</li>
+                <li>Подробная отчетность и рекомендации</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="review-cards">
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="">
+                    <p>"Отличный результат, продажи выросли вдвое!"</p>
+                    <span>Анна, розничный магазин</span>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="">
+                    <p>"Профессиональный подход и быстрая отдача"</p>
+                    <span>Игорь, онлайн-сервис</span>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="">
+                    <p>"Хорошая аналитика и поддержка на всех этапах"</p>
+                    <span>Мария, образовательный проект</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="container">
+            <h2>Кому подойдут наши услуги</h2>
+            <div class="case-cards">
+                <div class="case">Интернет-магазины</div>
+                <div class="case">B2B-компании</div>
+                <div class="case">Стартапы</div>
+                <div class="case">Сфера услуг</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <h2>Рассчитайте стоимость</h2>
+            <div class="calc-body">
+                <input type="range" id="budget" min="10000" max="500000" step="1000" value="10000">
+                <div class="calc-info">
+                    <span>Бюджет: <span id="budget-value">10 000</span> ₽</span>
+                    <span>Стоимость услуг: <span id="price-value">0</span> ₽</span>
+                </div>
+            </div>
+            <form id="calc-form">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="comment" placeholder="Комментарий"></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Тарифы</h2>
+            <table class="tariff-table">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Старт</th>
+                        <th>Оптимум</th>
+                        <th>Максимум</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Настройка рекламы</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Ведение кампаний</td>
+                        <td>✖</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                    </tr>
+                    <tr>
+                        <td>Аналитика и отчеты</td>
+                        <td>✖</td>
+                        <td>✖</td>
+                        <td>✔</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tariff-buttons">
+                <button class="btn">Заказать</button>
+                <button class="btn">Заказать</button>
+                <button class="btn">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <h2>Оставьте заявку и получите бесплатную консультацию</h2>
+            <form id="feedback-form">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="comment" placeholder="Комментарий"></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="contacts">
+                <p>Телефон: <a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                <p>Email: info@example.com</p>
+                <p>Адрес: г. Москва, ул. Пушкина, д. 1</p>
+            </div>
+            <div class="socials">
+                <a href="#"><img src="https://via.placeholder.com/24" alt=""></a>
+                <a href="#"><img src="https://via.placeholder.com/24" alt=""></a>
+                <a href="#"><img src="https://via.placeholder.com/24" alt=""></a>
+            </div>
+            <p class="copyright">© 2024 Digital Marketing Agency</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
