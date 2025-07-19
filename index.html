@@ -10,15 +10,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Digital Marketing</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#problems">Проблемы</a></li>
+                    <li><a href="#why-us">Преимущества</a></li>
+                    <li><a href="#steps">Этапы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#calculator">Калькулятор</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#feedback">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
         <div class="container">
             <h1>Увеличьте продажи с умным маркетингом</h1>
             <p class="subtitle">Настройка автоворонок, таргета и аналитики под ключ</p>
             <a href="#feedback" class="btn">Получить бесплатный разбор</a>
         </div>
-    </header>
+    </section>
 
-    <section class="problems">
+    <section class="problems" id="problems">
         <div class="container">
             <h2>С какими проблемами приходят клиенты</h2>
             <ul class="problem-list">
@@ -31,7 +53,7 @@
         </div>
     </section>
 
-    <section class="why-us">
+    <section class="why-us" id="why-us">
         <div class="container">
             <h2>Почему выбирают нас</h2>
             <ul class="advantages">
@@ -43,7 +65,7 @@
         </div>
     </section>
 
-    <section class="steps">
+    <section class="steps" id="steps">
         <div class="container">
             <h2>Как мы работаем</h2>
             <ol class="step-list">
@@ -55,7 +77,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <h2>Отзывы клиентов</h2>
             <div class="review-cards">
@@ -78,7 +100,7 @@
         </div>
     </section>
 
-    <section class="cases">
+    <section class="cases" id="cases">
         <div class="container">
             <h2>Кому подойдут наши услуги</h2>
             <div class="case-cards">
@@ -110,7 +132,7 @@
         </div>
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <h2>Тарифы</h2>
             <table class="tariff-table">

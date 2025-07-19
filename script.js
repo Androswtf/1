@@ -35,4 +35,12 @@
     const feedbackForm = document.getElementById('feedback-form');
     if (calcForm) validateForm(calcForm);
     if (feedbackForm) validateForm(feedbackForm);
+
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    if (burger && nav) {
+        burger.addEventListener('click', function() {
+            nav.classList.toggle('open');
+        });
+    }
 })();
