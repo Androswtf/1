@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     line-height: 1.6;
     color: #333;
     scroll-behavior: smooth;
@@ -15,11 +15,12 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .site-header {
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    background: linear-gradient(135deg, #7f3fef, #0062ff);
+    color: #fff;
     position: relative;
     z-index: 1000;
 }
@@ -29,6 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    text-align: left;
 }
 
 .logo {
@@ -38,11 +40,12 @@ body {
 .nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 .nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
 }
@@ -60,14 +63,21 @@ body {
     display: block;
     width: 25px;
     height: 3px;
-    background: #333;
+    background: #fff;
 }
 
 .hero {
-    background: linear-gradient(135deg, #4b23d9, #2364d9);
+    background: linear-gradient(135deg, #7f3fef, #0062ff);
     color: #fff;
     padding: 80px 0;
     text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0;
+    display: block;
 }
 
 .hero .btn {
@@ -96,7 +106,7 @@ h2 {
 .btn {
     display: inline-block;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #4b23d9, #2364d9);
+    background: linear-gradient(135deg, #7f3fef, #0062ff);
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
